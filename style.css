@@ -65,9 +65,9 @@ h5{
         }
 }
 @media only screen and (max-width: 600px) {
-        /* body {
+        body {
           background-color: lightblue;
-        } */
+        } 
         .wavy span{
                 position:relative;
                 display: inline-block;
