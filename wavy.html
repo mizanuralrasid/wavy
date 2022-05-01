@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.html">
+
+</head>
+
+<body>
+    <h1 id="demo"></h1><h1>Wishes You The</h1>
+
+        
+        <div class="wavy">
+            <span style="--i:1;">H</span>
+            <span style="--i:2;">a</span>
+            <span style="--i:3;">p</span>
+          <span style="--i:4;">p</span>
+          <span style="--i:5;">y</span>
+          &nbsp;&nbsp;
+          <span style="--i:6;">E</span>
+          <span style="--i:7;">i</span>
+          <span style="--i:8;">d</span> 
+          &nbsp;&nbsp;
+          
+          <span style="--i:9;">U</span>
+          <span style="--i:10;">l</span> 
+          &nbsp;&nbsp;
+          
+          <span style="--i:11;">F</span>
+          <span style="--i:12;">i</span>
+          <span style="--i:13;">t</span>
+          <span style="--i:14;">r</span>
+        </div>
+        <br><br> <br><br><br><br><br><br>
+           <div class="form">
+        <form action="http://127.0.0.1:5503/wavy.html">
+
+            <input type="text" id="name" placeholder="Enter your name here"><br><br>
+            <!-- <input type="text" id="s6" placeholder="Enter Account Marks"><br> -->
+            
+            <!-- <input id="submit" type="submit" src="button.png" onclick="submit_marks()"> -->
+            <input id="submit" type="image" src="button.png" onclick="submit_marks()">
+         </form>
+        </div>
+        <br><br>
+        <h5>For making this, feel free to contact me at <a href="https://mizanuralrasid.github.io/Mizanuralrasid/">Mzanur Alrasid</a></h5>
+        <!-- Project -->
+        <script src="main.js"></script>
+        <script>
+            document.getElementById("demo").innerHTML =localStorage.getItem("textvalue");
+        </script>
+        	
+
+
+
+	<script type="text/javascript">
+		function submit_marks() {
+		var name = (document.getElementById('name').value);
+	
+		localStorage.setItem("textvalue", name);
+		// document.write("Your Total Marks : "+total);
+		// document.write("<br>Your Percentage : "+per);
+		// document.write("<br>Your Grade : "+grade);
+						
+		}
+		</script>
+    </body>
+</html>
