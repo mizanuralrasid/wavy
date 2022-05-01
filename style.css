@@ -66,8 +66,15 @@ h5{
 }
 @media only screen and (max-width: 600px) {
         body {
-          background-color: lightblue;
-        } 
+    font-size: 15pt;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+    background: #000000;
+} 
         .wavy span{
                 position:relative;
                 display: inline-block;
